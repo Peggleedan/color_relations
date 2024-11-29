@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #0A014F;
+  background: rgb(55, 55, 55);
   color: white;
   padding: 10px 20px;
   transition: background 0.5s ease, height 0.5s ease;
@@ -31,6 +31,10 @@
 
 .nav-buttons {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  text-align: center;
 }
 
 .nav-buttons a {
@@ -65,16 +69,6 @@
   background: white;
 }
 
-#booking-button {
-color: white;
-  border-bottom: 0px;
-  background-color: #ef730d;
-  border-radius: 5px;
-  width: 140px;
-  height: 40px;
-  padding: 10px 15px;
-}
-
 /* Navbar when scrolling */
 
 .header-modified {
@@ -92,106 +86,4 @@ color: white;
       rgba(0, 0, 0, 0));
   color: white;
   padding: 10px 20px;
-}
-
-/* Mobile navigation */
-
-.header-mobile  {
-    position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 9999;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background: #0A014F;
-	color: white;
-	padding: 10px 20px;
-	transition: background 0.5s ease, height 0.5s ease;
-	box-sizing: border-box;
-	height: 80px;
-	border-bottom: 2px solid white;
-}
-
-.burger-menu {
-	position: relative;
-	z-index: 9999;
-	background-color: #0A014F;
-	transform: translateX(0);
-	float: left;
-	width: 100%;
-	height: 100%;
-	transition: all 0.5s ease;
-	overflow: hidden;
-	display: none;
-}
-
-.burger-menu.show {
-	display: flex;
-}
-
-.burger-menu.hide {
-	display: none;
-}
-
-.burger-button {
-	border: none;
-	color: whitesmoke;
-	font-weight: 600;
-	float: right;
-	display: flex;
-	font-size: 30px;
-	margin-right: 40px;
-}
-
-.burger-button:hover {
-	cursor: pointer;
-}
-
-.mobile-buttons {
-	display: flex;
-	flex-direction: column;
-	align-items: left;
-	width: 100%;
-}
-
-.mobile-nav {
-	text-decoration: none;
-	color: white;
-	font-size: x-large;
-	font-weight: bold;
-	padding: 20px 15px;
-	border-bottom: 2px solid white;
-	transition: all 0.3s ease;
-}
-
-.mobile-nav:hover {
-	color: orange;
-}
-
-
-.logo-name-mobile {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	cursor: pointer;
-}
-
-@media only screen and (max-width: 768px) {
-	.header,
-	.header-modified,
-	.logo-name {
-		display: none;
-	}
-
-	.header-mobile{
-		display: flex;
-	}
-}
-
-@media only screen and (min-width: 769px) {
-	.header-mobile,
-	.burger-menu.show {
-		display: none;
-	}
 }

@@ -37,21 +37,11 @@ const Navbar = () => {
 			}
 		};
 
-		const handleResize = () => {
-			if (window.innerWidth > 768) {
-				document.body.classList.remove('no-scroll');
-				//document.querySelector('.burger-menu').classList.remove('show'); // remove the burger menu show so it doesn't stay open
-			}
-		};
-
 	checkLocale();
-	handleResize();
     window.addEventListener('scroll', checkLocale, true);
-	window.addEventListener('resize', handleResize);
 
     return () => {
       window.removeEventListener('scroll', checkLocale, true);
-	  window.removeEventListener('resize', handleResize);
 	  document.body.classList.remove('no-scroll');
     };
 	
@@ -61,37 +51,17 @@ const Navbar = () => {
 	<>
 	<Headroom>
     <header className={`${isAtTop ? 'header' : 'header-modified'}`}>
-      <div className="logo-name" onClick = {toHome}>
+    {/* <div className="logo-name" onClick = {toHome}>
         <img src="/Images/logo.png" alt="Logo" className="logo" />
-        <div className="name">Tunisia Surf</div>
-      </div>
+        <div className="name"> Color Relations</div>
+      </div> */}
       <nav className="nav-buttons">
         <Link to="/" className="site-nav">Home</Link>
-        <Link to="/about" className="site-nav">About</Link>
-        <Link to="/prices" className="site-nav">Prices</Link>
-        <Link to="/contact" className="site-nav">Availability</Link>
+        <Link to="/about" className="site-nav">Quiz</Link>
+        <Link to="/prices" className="site-nav">Information</Link>
       </nav>
-      <div className="nav-buttons">
-        <button id="booking-button" href="#book">Book Today!</button>
-      </div>
     </header>
 	</Headroom>
-	<div className='header-mobile'>
-      <div className="logo-name-mobile" onClick = {toHome}>
-        <img src="/Images/logo.png" alt="Logo" className="logo" />
-        <div className="name">Tunisia Surf</div>
-      </div>
-	  <div className='burger-button' onClick = {toggleMenu}>&#9776;</div>
-	</div>
-	<div className={`burger-menu ${isMenuOpen ? 'show' : 'hide'}`} style = {{top: `${scrollPosition+80}px`}}>
-	  <nav className="mobile-buttons">
-		  <Link to="/" className="mobile-nav">Home</Link>
-		  <Link to="/about" className="mobile-nav">About</Link>
-		  <Link to="/prices" className="mobile-nav">Prices</Link>
-		  <Link to="/contact" className="mobile-nav">Availability</Link>
-		  <a className="mobile-nav" href="#book">Book Today!</a>
-	  </nav>
-  	</div>
 	</>
   );
 };
