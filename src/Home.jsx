@@ -12,12 +12,43 @@ function Home() {
 
   return (
     <>
-	<div className='videoContainer'>
 	<Navbar></Navbar>
-	<video autoPlay loop muted className='videoBackground' id = 'normal-background'>
-		<source src="/Videos/panda.mp4" type="video/mp4"/>
-		Your browser does not support the video tag.
-	</video>
+	<h1>Hover on card for more information</h1>
+	<div class='main-container'>
+	<div class="card-container">
+        <div class="card">
+            <div class="card-front">
+				<h2>Front Side</h2>
+            </div>
+            <div class="card-back">
+                <h2>Back Side</h2>
+            </div>
+        </div>
+		<div class="card">
+            <div class="card-front">
+				<h2>Front Side</h2>
+            </div>
+            <div class="card-back">
+                <h2>Back Side</h2>
+            </div>
+        </div>
+		<div class="card">
+            <div class="card-front">
+				<h2>Front Side</h2>
+            </div>
+            <div class="card-back">
+                <h2>Back Side</h2>
+            </div>
+        </div>
+		<div class="card">
+            <div class="card-front">
+                <h2>Front Side</h2>
+            </div>
+            <div class="card-back">
+                <h2>Back Side</h2>
+            </div>
+        </div>
+    </div>
 	</div>
 	<Footer/>
     </>

@@ -1,27 +1,66 @@
-/* Video player */
+/* Main */
 
-.videoContainer {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 7%;
 }
 
-.videoBackground {
+h2 {
+  font-size: 2.7em;
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.card {
+  width: 250px;
+  height: 380px;
+  position: relative;
+  transform-style: preserve-3d; 
+  transition: transform 0s;
+}
+
+.card:hover {
+  transform: rotateY(180deg); 
+}
+
+.card-front, .card-back {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  pointer-events: none; 
+  backface-visibility: hidden;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-.pageHeader {
-  position: relative;
-  color: gray;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  margin-top: 15%;
+.card-front {
+  background: #ffffff;
+  color: #333;
 }
 
-/* Main */
+.card-back {
+  background: #333;
+  color: #ffffff;
+  transform: rotateY(180deg);
+}

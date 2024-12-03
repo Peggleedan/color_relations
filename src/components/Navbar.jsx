@@ -26,7 +26,7 @@ const Navbar = () => {
 	}
 
   	useEffect(() => {
-		const threshold = window.innerHeight * 0.07;
+		const threshold = window.innerHeight * -1;
 		const width = window.innerWidth;
 
 		const checkLocale = () => {
@@ -49,7 +49,6 @@ const Navbar = () => {
 
   return (
 	<>
-	<Headroom>
     <header className={`${isAtTop ? 'header' : 'header-modified'}`}>
     {/* <div className="logo-name" onClick = {toHome}>
         <img src="/Images/logo.png" alt="Logo" className="logo" />
@@ -57,11 +56,10 @@ const Navbar = () => {
       </div> */}
       <nav className="nav-buttons">
         <Link to="/" className="site-nav">Home</Link>
-        <Link to="/about" className="site-nav">Quiz</Link>
-        <Link to="/prices" className="site-nav">Information</Link>
+        <Link to="/prel" className="site-nav">Basic Quiz</Link>
+        <Link to="/advanced" className="site-nav">Advanced Quiz</Link>
       </nav>
     </header>
-	</Headroom>
 	</>
   );
 };
