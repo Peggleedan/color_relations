@@ -56,8 +56,8 @@ const Navbar = () => {
       </div> */}
       <nav className="nav-buttons">
         <Link to="/" className="site-nav">Home</Link>
-        <Link to="/prel" className="site-nav">Basic Quiz</Link>
-        <Link to="/advanced" className="site-nav">Advanced Quiz</Link>
+        <Link to="/quiz-1" className="site-nav">Quiz 1</Link>
+        <Link to="/quiz-2" className="site-nav">Quiz 2</Link>
       </nav>
     </header>
 	</>

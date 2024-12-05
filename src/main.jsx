@@ -4,6 +4,10 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-route
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { ScrollToTop } from './components/utilities.jsx';
 import Home from './Home.jsx';
+import Quiz1 from './Quiz1.jsx';
+import Quiz2 from './Quiz2.jsx';
+import Navbar from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
 import './index.css';
 
 const App = () => {
@@ -19,13 +23,15 @@ const Main = () => {
   let location = useLocation();
 
   return (
-    <TransitionGroup>
-      <CSSTransition key={location.key} classNames="fade" timeout={500}>
+    <>
+    <Navbar></Navbar>
         <Routes location={location}>
           <Route path="/" element={<Home />} />
+          <Route path="/quiz-1" element={<Quiz1 />} />
+          <Route path="/quiz-2" element={<Quiz2 />} />
         </Routes>
-      </CSSTransition>
-    </TransitionGroup>
+    <Footer></Footer>
+    </>
   );
 };
 

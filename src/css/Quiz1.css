@@ -1,0 +1,156 @@
+/* Main */
+
+hr {
+  margin: 0;
+  border: 0;
+  margin: 0 20px;
+  border-top: 1px solid black;
+}
+
+.quiz-card-back h2 {
+  font-size: 2.0em;
+  line-height: 1.1;
+  margin-top: 10%;
+  margin-bottom: 0;
+  padding: 0 20px;
+  color: black;
+}
+
+.quiz-card-back p {
+  font-size: 1.2em;
+  line-height: 1.1;
+  margin-top: 10px;
+  padding: 0 20px;
+  color: black;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.quiz-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.quiz-card {
+  width: 250px;
+  height: 380px;
+  position: relative;
+  transform-style: preserve-3d; 
+  transition: transform 0s;
+}
+
+.quiz-card:hover {
+  transform: rotateY(180deg); 
+}
+
+.quiz-card-front, .quiz-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz-card-front {
+  background: #ffffff;
+  color: #333;
+}
+
+.quiz-card-back {
+  background: #333;
+  color: #ffffff;
+  transform: rotateY(180deg);
+}
+
+img {
+  width: 100%;
+  height: 60%;
+  margin-top: 10%;
+}
+
+#card-1-f,
+#card-1-b  {
+  background: #f1c40f;
+}
+
+#card-2-f,
+#card-2-b {
+  background: #cfa80c;
+}
+
+#card-3-f,
+#card-3-b  {
+  background: #ffd633;
+}
+
+#card-4-f,
+#card-4-b  {
+  background: #ffee53;
+}
+
+#card-5-f,
+#card-5-b  {
+  background: #003cff;
+}
+
+#card-6-f,
+#card-6-b  {
+  background: #5261ff;
+}
+
+#card-7-f,
+#card-7-b  {
+  background: #0600be;
+}
+
+#card-8-f,
+#card-8-b  {
+  background: #3235ce;
+}
+
+#card-9-f,
+#card-9-b  {
+  background: #7fff92;
+}
+
+#card-10-f,
+#card-10-b  {
+  background: #ff5252;
+}
+
+#card-11-f,
+#card-11-b  {
+  background: #00ff08;
+}
+
+#card-12-f,
+#card-12-b  {
+  background: #be0000;
+}
+
+.next-button {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: rgb(55, 55, 55);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}

@@ -1,19 +1,5 @@
 /* Main */
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  text-align: center;
-  margin-top: 7%;
-}
-
-h2 {
-  font-size: 2.7em;
-  line-height: 1.1;
-  text-align: center;
-  margin-top: 2%;
-}
-
 .main-container {
   display: flex;
   flex-direction: row;
@@ -48,9 +34,7 @@ h2 {
   height: 100%;
   backface-visibility: hidden;
   display: flex;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
