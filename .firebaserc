@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "surf-a06f6"
-  }
+    "default": "color-48d59",
+    "color": "color-48d59"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
