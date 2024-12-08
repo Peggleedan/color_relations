@@ -6,8 +6,8 @@ function Home() {
   return (
     <>
 	
-	<h1>Hover on card for more information</h1>
-	<div class='main-container'>
+	<h1 className='home-header'>Hover on card for more information</h1>
+	<div class='home-container'>
 	<div class="card-container">
         <div class="card">
             <div class="card-front">
@@ -43,8 +43,10 @@ function Home() {
         </div>
     </div>
 	</div>
+    <div class="link-container">
         <Link to="/quiz-1" className="">Quiz 1</Link>
         <Link to="/quiz-2" className="">Quiz 2</Link>
+    </div>
     </>
   )
 }
