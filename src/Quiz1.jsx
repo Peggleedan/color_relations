@@ -31,6 +31,8 @@ function Quiz1() {
                 title: "Zero Hunger",
                 description: "End hunger, achieve food security and improved nutrition and promote sustainable agriculture.",
             },
+        ],
+        [
             {
                 id: 3,
                 frontImage: "/Images/health.png",
@@ -57,6 +59,8 @@ function Quiz1() {
                 title: "Decent Work and Economic growth",
                 description: "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all.",
             },
+        ],
+        [
             {
                 id: 7,
                 frontImage: "/Images/climate.png",
@@ -83,6 +87,8 @@ function Quiz1() {
                 title: "Reduced Inequality",
                 description: "Reduce inequality within and among countries.",
             },
+        ],
+        [
             {
                 id: 11,
                 frontImage: "/Images/life.png",
@@ -100,7 +106,7 @@ function Quiz1() {
 
     const [quizCards, setQuizCards] = useState([]);
     const [current, setCurrent] = useState(0);
-    const [timeLeft, setTimeLeft] = useState(150);
+    const [timeLeft, setTimeLeft] = useState(30);
     const [isTimerRunning, setIsTimerRunning] = useState(false);
 
     const ready = () => {
@@ -122,7 +128,7 @@ function Quiz1() {
             clearInterval(timer);
             setIsTimerRunning(false); 
             setCurrent((prev) => prev + 1); 
-            setTimeLeft(150);
+            setTimeLeft(30);
         }
 
         return () => clearInterval(timer);
@@ -142,17 +148,17 @@ function Quiz1() {
         <>
             <div className="main-container">
                 {!isTimerRunning ? (
-                    <button className="ready-button" onClick={ready}>Start {current+1}/3</button>
+                    <button className="ready-button" onClick={ready}>Start {current+1}/6</button>
                 ) : (
                     <>
                         <h2 className='timer'>Time Left: {Math.floor(timeLeft / 60)}:{timeLeft % 60 < 10 ? '0' : ''}{timeLeft % 60}</h2>
                         <div className="quiz-card-container">
                             {quizCards[current].map((card) => (
                                 <div className="quiz-card" key={card.id}>
-                                    <div className="quiz-card-front" id={`card-${card.id}-f`}>
+                                    <div className="quiz-card-front" id={`card-${card.id}-f1`}>
                                         <img src={card.frontImage} alt={card.title} />
                                     </div>
-                                    <div className="quiz-card-back" id={`card-${card.id}-b`}>
+                                    <div className="quiz-card-back" id={`card-${card.id}-b1`}>
                                         <h2>{card.title}</h2>
                                         <p>{card.description}</p>
                                         <hr />

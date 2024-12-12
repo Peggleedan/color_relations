@@ -82,64 +82,64 @@ img {
   margin-top: 10%;
 }
 
-#card-1-f,
-#card-1-b  {
-  background: #f1c40f;
+#card-1-f1,
+#card-1-b1  {
+  background: #FD9D24;
 }
 
-#card-2-f,
-#card-2-b {
-  background: #cfa80c;
+#card-2-f1,
+#card-2-b1 {
+  background: #DDA63A;
 }
 
-#card-3-f,
-#card-3-b  {
-  background: #ffd633;
+#card-3-f1,
+#card-3-b1  {
+  background: #FCC30B;
 }
 
-#card-4-f,
-#card-4-b  {
-  background: #ffee53;
+#card-4-f1,
+#card-4-b1 {
+  background: #BF8B2E;
 }
 
-#card-5-f,
-#card-5-b  {
-  background: #003cff;
+#card-5-f1,
+#card-5-b1  {
+  background: #26BDE2;
 }
 
-#card-6-f,
-#card-6-b  {
-  background: #5261ff;
+#card-6-f1,
+#card-6-b1  {
+  background: #00689D;
 }
 
-#card-7-f,
-#card-7-b  {
-  background: #0600be;
+#card-7-f1,
+#card-7-b1  {
+  background: #0A97D9;
 }
 
-#card-8-f,
-#card-8-b  {
-  background: #3235ce;
+#card-8-f1,
+#card-8-b1  {
+  background: #19486A;
 }
 
-#card-9-f,
-#card-9-b  {
-  background: #7fff92;
+#card-9-f1,
+#card-9-b1  {
+  background: #56C02B;
 }
 
-#card-10-f,
-#card-10-b  {
-  background: #ff5252;
+#card-10-f1,
+#card-10-b1  {
+  background: #E5243B;
 }
 
-#card-11-f,
-#card-11-b  {
-  background: #00ff08;
+#card-11-f1,
+#card-11-b1  {
+  background: #3F7E44;
 }
 
-#card-12-f,
-#card-12-b  {
-  background: #be0000;
+#card-12-f1,
+#card-12-b1  {
+  background: #C5192D;
 }
 
 .timer {
@@ -147,6 +147,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black;
 }
 
 .ready-button,

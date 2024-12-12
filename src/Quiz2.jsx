@@ -31,6 +31,8 @@ function Quiz2() {
                 title: "Peace, Justice and Strong Institutions",
                 description: "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels.",
             },
+        ],
+        [
             {
                 id: 3,
                 frontImage: "/Images/responsible.png",
@@ -57,6 +59,8 @@ function Quiz2() {
                 title: "Life Below Water",
                 description: "Conserve and sustainably use the oceans, seas and marine resources for sustainable development.",
             },
+        ],
+        [
             {
                 id: 7,
                 frontImage: "/Images/climate.png",
@@ -83,6 +87,8 @@ function Quiz2() {
                 title: "Reduced Inequality",
                 description: "Reduce inequality within and among countries.",
             },
+        ],
+        [
             {
                 id: 11,
                 frontImage: "/Images/life.png",
@@ -91,16 +97,16 @@ function Quiz2() {
             },
             {
                 id: 12,
-                frontImage: "/Images/peace.png",
-                title: "Peace, Justice and Strong Institutions",
-                description: "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels.",
+                frontImage: "/Images/energy.png",
+                title: "Affordable and Clean Energy",
+                description: "Ensure access to affordable, reliable, sustainable and modern energy for all.",
             },
         ],
 ];
 
     const [quizCards, setQuizCards] = useState([]);
     const [current, setCurrent] = useState(0);
-    const [timeLeft, setTimeLeft] = useState(150);
+    const [timeLeft, setTimeLeft] = useState(30);
     const [isTimerRunning, setIsTimerRunning] = useState(false);
 
     const ready = () => {
@@ -122,7 +128,7 @@ function Quiz2() {
             clearInterval(timer);
             setIsTimerRunning(false); 
             setCurrent((prev) => prev + 1); 
-            setTimeLeft(150);
+            setTimeLeft(30);
         }
 
         return () => clearInterval(timer);
@@ -142,7 +148,7 @@ function Quiz2() {
         <>
             <div className="main-container">
                 {!isTimerRunning ? (
-                    <button className="ready-button" onClick={ready}>Start {current+1}/3</button>
+                    <button className="ready-button" onClick={ready}>Start {current+1}/6</button>
                 ) : (
                     <>
                         <h2 className='timer'>Time Left: {Math.floor(timeLeft / 60)}:{timeLeft % 60 < 10 ? '0' : ''}{timeLeft % 60}</h2>
