@@ -21,55 +21,55 @@ function Quiz2() {
         [
             {
                 id: 1,
-                frontImage: "/Images/partnership.png",
-                title: "Partnerships for the Goals",
-                description: "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development.",
+                frontImage: "/Images/health.png",
+                title: "Good Health and Well-being",
+                description: "Ensure healthy lives and promote well-being for all at all ages.",
             },
             {
                 id: 2,
-                frontImage: "/Images/peace.png",
-                title: "Peace, Justice and Strong Institutions",
-                description: "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels.",
+                frontImage: "/Images/climate.png",
+                title: "Climate Action",
+                description: "Take urgent action to combat climate change and its impacts.",
             },
         ],
         [
             {
                 id: 3,
-                frontImage: "/Images/responsible.png",
-                title: "Responsible Consumption and Production",
-                description: "Ensure sustainable consumption and production patterns.",
-            },
-            {
-                id: 4,
-                frontImage: "/Images/sustainable.png",
-                title: "Sustainable Cities and Communities",
-                description: "Make cities and human settlements inclusive, safe, resilient and sustainable.",
-            },
-        ],
-        [
-            {
-                id: 5,
-                frontImage: "/Images/clean.png",
-                title: "Clean Water",
-                description: "Ensure availability and sustainable management of water and sanitation for all.",
-            },
-            {
-                id: 6,
-                frontImage: "/Images/water.png",
-                title: "Life Below Water",
-                description: "Conserve and sustainably use the oceans, seas and marine resources for sustainable development.",
-            },
-        ],
-        [
-            {
-                id: 7,
                 frontImage: "/Images/climate.png",
                 title: "Climate Action",
                 description: "Take urgent action to combat climate change and its impacts.",
             },
             {
-                id: 8,
+                id: 4,
+                frontImage: "/Images/life.png",
+                title: "Life on Land",
+                description: "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss.",
+            },
+        ],
+        [
+            {
+                id: 5,
+                frontImage: "/Images/poverty.png",
+                title: "No Poverty",
+                description: "End poverty in all its forms everywhere.",
+            },
+            {
+                id: 6,
+                frontImage: "/Images/inequality.png",
+                title: "Reduced Inequalities",
+                description: "Reduce inequality within and among countries.",
+            },
+        ],
+        [
+            {
+                id: 7,
                 frontImage: "/Images/education.png",
+                title: "Quality Education",
+                description: "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.",
+            },
+            {
+                id: 8,
+                frontImage: "/Images/economy.png",
                 title: "Quality Education",
                 description: "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.",
             },
@@ -77,36 +77,36 @@ function Quiz2() {
         [
             {
                 id: 9,
-                frontImage: "/Images/industry.png",
-                title: "Industry, Innovation and Infrastructure",
-                description: "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation.",
+                frontImage: "/Images/energy.png",
+                title: "Affordable and Clean Energy",
+                description: "Ensure access to affordable, reliable, sustainable and modern energy for all.",
             },
             {
                 id: 10,
-                frontImage: "/Images/inequality.png",
-                title: "Reduced Inequality",
-                description: "Reduce inequality within and among countries.",
+                frontImage: "/Images/water.png",
+                title: "Life below Water",
+                description: "Conserve and sustainably use the oceans, seas and marine resources for sustainable development.",
             },
         ],
         [
             {
                 id: 11,
-                frontImage: "/Images/life.png",
-                title: "Life on Land",
-                description: "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss.",
+                frontImage: "/Images/hunger.png",
+                title: "Zero Hunger",
+                description: "End hunger, achieve food security and improved nutrition and promote sustainable agriculture.",
             },
             {
                 id: 12,
-                frontImage: "/Images/energy.png",
-                title: "Affordable and Clean Energy",
-                description: "Ensure access to affordable, reliable, sustainable and modern energy for all.",
+                frontImage: "/Images/partnership.png",
+                title: "Partnerships for the Goals",
+                description: "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development.",
             },
         ],
 ];
 
     const [quizCards, setQuizCards] = useState([]);
     const [current, setCurrent] = useState(0);
-    const [timeLeft, setTimeLeft] = useState(30);
+    const [timeLeft, setTimeLeft] = useState(8);
     const [isTimerRunning, setIsTimerRunning] = useState(false);
 
     const ready = () => {
@@ -128,7 +128,7 @@ function Quiz2() {
             clearInterval(timer);
             setIsTimerRunning(false); 
             setCurrent((prev) => prev + 1); 
-            setTimeLeft(30);
+            setTimeLeft(8);
         }
 
         return () => clearInterval(timer);

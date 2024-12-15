@@ -21,9 +21,9 @@ function Quiz1() {
         [
             {
                 id: 1,
-                frontImage: "/Images/poverty.png",
-                title: "No Poverty",
-                description: "End poverty in all its forms everywhere.",
+                frontImage: "/Images/energy.png",
+                title: "Affordable and Clean Energy",
+                description: "Ensure access to affordable, reliable, sustainable and modern energy for all.",
             },
             {
                 id: 2,
@@ -35,15 +35,15 @@ function Quiz1() {
         [
             {
                 id: 3,
-                frontImage: "/Images/health.png",
-                title: "Good Health",
-                description: "Ensure healthy lives and promote well-being for all at all ages.",
+                frontImage: "/Images/responsible.png",
+                title: "Responsible Consumption and Production",
+                description: "Ensure sustainable consumption and production patterns.",
             },
             {
                 id: 4,
-                frontImage: "/Images/education.png",
-                title: "Quality Education",
-                description: "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.",
+                frontImage: "/Images/energy.png",
+                title: "Affordable and Clean Energy",
+                description: "Ensure access to affordable, reliable, sustainable and modern energy for all.",
             },
         ],
         [
@@ -55,37 +55,37 @@ function Quiz1() {
             },
             {
                 id: 6,
-                frontImage: "/Images/economy.png",
-                title: "Decent Work and Economic growth",
-                description: "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all.",
+                frontImage: "/Images/water.png",
+                title: "Life Below Water",
+                description: "Conserve and sustainably use the oceans, seas and marine resources for sustainable development.",
             },
         ],
         [
             {
                 id: 7,
-                frontImage: "/Images/climate.png",
-                title: "Climate Action",
-                description: "Take urgent action to combat climate change and its impacts.",
+                frontImage: "/Images/peace.png",
+                title: "Peace, Justice and Strong Institutions",
+                description: "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels.",
             },
             {
                 id: 8,
-                frontImage: "/Images/energy.png",
-                title: "Affordable and Clean Energy",
-                description: "Ensure access to affordable, reliable, sustainable and modern energy for all.",
+                frontImage: "/Images/partnership.png",
+                title: "Partnerships for the Goals",
+                description: "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development.",
             },
         ],
         [
             {
                 id: 9,
-                frontImage: "/Images/industry.png",
-                title: "Industry, Innovation and Infrastructure",
-                description: "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation.",
+                frontImage: "/Images/health.png",
+                title: "Good Health and Well-being",
+                description: "Ensure healthy lives and promote well-being for all at all ages.",
             },
             {
                 id: 10,
-                frontImage: "/Images/inequality.png",
-                title: "Reduced Inequality",
-                description: "Reduce inequality within and among countries.",
+                frontImage: "/Images/poverty.png",
+                title: "No Poverty",
+                description: "End poverty in all its forms everywhere.",
             },
         ],
         [
@@ -97,16 +97,16 @@ function Quiz1() {
             },
             {
                 id: 12,
-                frontImage: "/Images/water.png",
-                title: "Life Below Water",
-                description: "Conserve and sustainably use the oceans, seas and marine resources for sustainable development.",
+                frontImage: "/Images/economy.png",
+                title: "Decent Work and Economic Growth",
+                description: "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all.",
             },
         ],
 ];
 
     const [quizCards, setQuizCards] = useState([]);
     const [current, setCurrent] = useState(0);
-    const [timeLeft, setTimeLeft] = useState(30);
+    const [timeLeft, setTimeLeft] = useState(8);
     const [isTimerRunning, setIsTimerRunning] = useState(false);
 
     const ready = () => {
@@ -128,7 +128,7 @@ function Quiz1() {
             clearInterval(timer);
             setIsTimerRunning(false); 
             setCurrent((prev) => prev + 1); 
-            setTimeLeft(30);
+            setTimeLeft(8);
         }
 
         return () => clearInterval(timer);
