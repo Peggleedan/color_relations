@@ -106,7 +106,7 @@ function Quiz1() {
 
     const [quizCards, setQuizCards] = useState([]);
     const [current, setCurrent] = useState(0);
-    const [timeLeft, setTimeLeft] = useState(8);
+    const [timeLeft, setTimeLeft] = useState(30);
     const [isTimerRunning, setIsTimerRunning] = useState(false);
 
     const ready = () => {
@@ -128,7 +128,7 @@ function Quiz1() {
             clearInterval(timer);
             setIsTimerRunning(false); 
             setCurrent((prev) => prev + 1); 
-            setTimeLeft(8);
+            setTimeLeft(30);
         }
 
         return () => clearInterval(timer);
