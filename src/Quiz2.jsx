@@ -139,7 +139,7 @@ function Quiz2() {
         return (
             <div className="main-container">
                 <h1>All rounds completed!</h1>
-                <button className="next-button" onClick={() => (window.location.href = 'https://docs.google.com/forms/d/1xjRxG34eWDcFfNCnkX9yakB-KqVN0eHtKJE-w4vhp-w/')}>Proceed to Form</button>
+                <button className="next-button" onClick={() => (window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLScqUbmiQ5upyoWbPpPe-i6m6rR0xLPyAZjzYGDyZumZ7qcrKw/viewform')}>Proceed to Form</button>
             </div>
         );
     }
