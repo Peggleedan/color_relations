@@ -1,5 +1,7 @@
 import './css/Quiz1.css';
 import React, { useState, useEffect } from 'react';
+import Navbar from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
 import { Link, useNavigate } from 'react-router-dom';
 
 function shuffle(array) {
@@ -146,6 +148,7 @@ function Quiz1() {
 
     return (
         <>
+        <Navbar></Navbar>
             <div className="main-container">
                 {!isTimerRunning ? (
                     <button className="ready-button" onClick={ready}>Start {current+1}/6</button>
@@ -169,6 +172,7 @@ function Quiz1() {
                     </>
                 )}
             </div>
+        <Footer></Footer>
         </>
     );
 }

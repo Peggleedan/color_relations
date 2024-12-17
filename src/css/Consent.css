@@ -1,0 +1,73 @@
+.consent-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f4f7fa;
+    font-family: Arial, sans-serif;
+}
+
+.consent-container h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.consent-container p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.consent-container a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.consent-container a:hover {
+    text-decoration: underline;
+}
+
+.consent-container label {
+    font-size: 1.1rem;
+    margin-right: 20px;
+    color: #333;
+}
+
+.consent-container input[type="radio"] {
+    margin-right: 5px;
+    accent-color: #007bff;
+}
+
+#continueButton {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 20px;
+    background-color: #439eff;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+#continueButton:hover {
+    background-color: #007bff;
+}
+
+#continueButton:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+

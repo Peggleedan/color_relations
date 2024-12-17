@@ -1,28 +1,31 @@
 import './css/Home.css'
+import Navbar from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
 import { Link, useNavigate  } from 'react-router-dom';
 
 function Home() {
 
   return (
     <>
+    <Navbar></Navbar>
 	
 	<h1 className='home-header'>Hover on card for more information</h1>
 	<div class='home-container'>
 	<div class="card-container">
         <div class="card">
             <div class="card-front">
-				<h2>Front Side</h2>
+                <h2>Hover me!</h2>
             </div>
             <div class="card-back">
-                <h2>Back Side</h2>
+                <h2>Some information that is shown when you hover the card.</h2>
             </div>
         </div>
 		<div class="card">
             <div class="card-front">
-				<h2>Front Side</h2>
+                <h2>Hover me!</h2>
             </div>
             <div class="card-back">
-                <h2>Back Side</h2>
+                <h2>Some information that is shown when you hover the card.</h2>
             </div>
         </div>
     </div>
@@ -31,6 +34,7 @@ function Home() {
         <Link to="/quiz-1" className="">Quiz 1</Link>
         <Link to="/quiz-2" className="">Quiz 2</Link>
     </div>
+    <Footer></Footer>
     </>
   )
 }
