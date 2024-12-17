@@ -25,22 +25,6 @@ function Home() {
                 <h2>Back Side</h2>
             </div>
         </div>
-		<div class="card">
-            <div class="card-front">
-				<h2>Front Side</h2>
-            </div>
-            <div class="card-back">
-                <h2>Back Side</h2>
-            </div>
-        </div>
-		<div class="card">
-            <div class="card-front">
-                <h2>Front Side</h2>
-            </div>
-            <div class="card-back">
-                <h2>Back Side</h2>
-            </div>
-        </div>
     </div>
 	</div>
     <div class="link-container">
