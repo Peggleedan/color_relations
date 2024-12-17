@@ -72,7 +72,7 @@ function Quiz2() {
             {
                 id: 8,
                 frontImage: "/Images/economy.png",
-                title: "Quality Education",
+                title: "Decent Work and Economic Growth",
                 description: "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.",
             },
         ],
